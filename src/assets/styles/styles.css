@@ -1,0 +1,503 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif; 
+  margin: 0; 
+  padding: 0; 
+}
+
+/* Header */
+header {
+  background-color: #c7c7c7; 
+  padding: 20px; 
+  display: flex; 
+  justify-content: flex-end; 
+  align-items: center; 
+}
+
+.header-container {
+  display: flex; 
+  align-items: center; 
+  margin-right: 30px; 
+}
+
+.header-container h1 {
+  margin-right: 30px; 
+}
+/* Fin Header */
+
+/* Main */
+main {
+  display: flex; 
+  padding: 20px; 
+}
+/* Fin Main */
+
+/* Footer */
+footer {
+  background-color: #c7c7c7; 
+  padding: 20px; 
+}
+
+.footer-container {
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  margin-right: 30px; 
+}
+
+.redes-sociales img {
+  width: 30px; 
+  margin-left: 5px; 
+}
+/*Fin Footer*/
+
+
+/* Formulario de inicio de sesión */
+.login-container {
+  text-align: center; 
+}
+
+.contenedor-general-login {
+  display: flex; 
+  justify-content: space-between; 
+  flex-direction: column; 
+}
+
+@media screen and (min-width: 768px) {
+  .contenedor-general-login {
+    display: flex;
+    flex-direction: row; 
+  }
+}
+
+.contenedor-izquierdo-login,
+.contenedor-derecho-login {
+  flex: 1; 
+  padding: 10px; 
+  margin: 0 20px;
+}
+
+.contenedor-izquierdo-login {
+  display: inline-block; 
+  justify-content: space-between; 
+  flex-direction: row; 
+  border-right: 1px solid #000000; 
+}
+
+.contenedor-general-izquierdo {
+  display:flex
+}
+
+.contenedor-izquierdo-1,
+.contenedor-izquierdo-2 {
+  text-align: left;
+  flex: 1; 
+  padding: 10px; 
+  margin: 0 20px;
+}
+
+.contenedor-izquierdo-1 {
+  flex: 0 0 10%;
+  margin-right: 10px;
+}
+
+.contenedor-izquierdo-2 {
+  flex: 0 0 90%;
+}
+
+.contenedor-derecho-login {
+  padding-left: 20px; 
+}
+
+hr {
+  border: none; 
+  border-top: 1px solid #ccc; 
+}
+
+.separador {
+  margin-top: 10px; 
+  margin-bottom: 10px; 
+}
+
+.botones {
+  margin-top: 20px; 
+  justify-content: center;
+}
+
+.botones button {
+  background-color: #555; 
+  color: white; 
+  padding: 10px 20px; 
+  border: none; 
+  border-radius: 5px;
+  cursor: pointer; 
+}
+
+.botones button:hover {
+  background-color: #777; 
+}
+
+.error {
+  color: red;
+}
+/*Fin Formulario de inicio de sesión*/
+
+/*Inicio Estilos Formulario de Registro*/ 
+.body-container {
+  background-color: white; 
+  border: 1px solid #ccc; 
+  border-radius: 5px; 
+  padding: 20px; 
+  flex: 3; 
+}
+
+form {
+  display: flex; 
+  flex-direction: column; 
+}
+
+.contenedor-general {
+  display: flex; 
+  justify-content: space-between; 
+  flex-direction: column; 
+}
+
+@media screen and (min-width: 768px) {
+  .contenedor-general {
+    flex-direction: row; 
+  }
+}
+
+.contenedor-izquierdo,
+.contenedor-derecho {
+  flex: 1; 
+}
+
+.input-group {
+  margin-bottom: 10px; 
+}
+
+label {
+  display: block; 
+  margin-bottom: 5px; 
+  font-weight: bold;
+}
+
+input {
+  padding: 10px; 
+  border: 1px solid rgb(85, 85, 85); 
+  border-radius: 5px; 
+  width: 65%; 
+  margin-bottom: 20px;
+}
+
+#aceptar-terminos {
+  width: 20px; 
+}
+
+.input-group a:hover {
+  text-decoration: underline; 
+}
+
+.botones button {
+  background-color: #555; 
+  color: white; 
+  padding: 10px 20px; 
+  border: none; 
+  border-radius: 5px; 
+  cursor: pointer; 
+  margin-right: 10px; 
+}
+
+.botones button:hover {
+  background-color: #777; 
+}
+
+@media screen and (max-width: 768px) {
+  .imagen {
+    display: none; 
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.body-container {
+  margin-top: 2rem;
+  padding: 1rem;
+  border-radius: 8px;
+  background: url('@/assets/images/RRHH.png') no-repeat center center;
+  background-size: cover;
+}
+
+.contenedor-general {
+  display: flex;
+  width: 100%; 
+  border: 1px solid #ccc;
+  margin-bottom: 1rem;
+  background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semitransparente */
+}
+
+.contenedor-izquierdo, .contenedor-derecho {
+  flex: 1;
+  padding: 1rem;
+}
+
+.input-group {
+  margin-bottom: 1rem;
+}
+
+/* Estilos adicionales para alinear el checkbox y el label */
+.input-group.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Ajustes generales */
+.header-container, .footer-container {
+  text-align: center;
+}
+
+.body-container {
+  padding: 20px;
+}
+
+.contenedor-general {
+  display: flex;
+  justify-content: space-between;
+}
+
+.input-group {
+  margin-bottom: 1rem;
+}
+
+.botones {
+  display: flex;
+  justify-content: center;
+}
+
+/* Estilos para el modal */
+.modal {
+  display: block; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0); 
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; 
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; 
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+/*Fin Estilos para el modal Terminos y Condiciones*/
+
+/*Fin de Formulario de Registro*/
+
+
+/* Inicio de Página Principal */
+
+/* Estilos para la tabla de empleados */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+}
+
+table th,
+table td {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  text-align: left;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.336);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+table th {
+  background-color: #f0f0f0;
+  color: black;
+}
+
+table td img {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  margin-left: 0.5rem;
+}
+
+.far.fa-edit, .far.fa-trash-alt {
+  cursor: pointer;
+  font-size: 1.2em;
+  color: #ffffff;
+  margin-right: 0.5em;
+  transition: color 0.3s;
+}
+
+.far.fa-edit:hover, .far.fa-trash-alt:hover {
+  color: #15ff00;
+}
+/* Fin Estilos para la tabla de empleados */
+
+
+/* Estilos para el modal de confirmación */
+
+
+
+/* Modal Overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Modal */
+.modal {
+  position: fixed;
+  background: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 1em;
+  border-radius: 0.5em;
+  text-align: center;
+  top: 0;
+  left: 0px;
+  max-width: 400px;
+  height: 100%;  
+  transition: right 0.3s;
+  z-index: 1001;
+  flex-direction: column;
+}
+
+/* Modal Buttons */
+.modal button {
+  display: flex;
+  justify-content: center;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  flex-direction: initial;
+  margin-bottom: 1rem;
+  align-items: center;
+}
+
+/* Transition */
+.modal-enter-active,
+.modal-leave-active {
+  transition: all 0.5s ease;
+}
+
+.modal-enter,
+.modal-leave-to {
+  transform: translateX(-100%);
+  opacity: 0;
+}
+/* Fin Estilos para el modal de confirmación */
+
+/*Fin Estilos para la tabla de empleados*/
+
+/* Estilos para CustomSidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -600px;
+  width: 600px;
+  height: 100%;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: right 0.3s;
+  z-index: 1001;
+}
+
+.sidebar.is-visible {
+  right: 0;
+}
+
+.sidebar-content {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.input-group {
+  display: grid;
+  grid-template-columns: 0.5fr 2fr;
+  margin-bottom: 1rem;
+  align-items: center;
+}
+
+.input-group label {
+  margin-right: 1rem;
+}
+
+.input-group input,
+.input-group select {
+  width: 100%;
+}
+
+.botones {
+  display: flex;
+  justify-content: center;
+  border-radius: 8px;
+}
+
+.botones button {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.sidebar-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  transition: opacity 0.3s;
+}
+
+.close-btn {
+  align-self: flex-end;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+/* Fin de estilos para CustomSidebar */
+
+/* Fin de Página Principal */
