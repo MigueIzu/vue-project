@@ -5,6 +5,11 @@
         <h1>Bienvenido</h1>
         <img src="@/assets/images/icono-usuario.png" alt="Ícono de Usuario" />
       </div>
+	  <div class="navList">
+		<a href="http://localhost:8081/main">Listar Empleados</a>
+		<a href="http://localhost:8081/register">Crear Empleado</a>
+	  	<a href="https://expensesmanagercacpython24155g8front.netlify.app">Front</a>
+	  </div> 
     </header>
 
     <main>
@@ -170,3 +175,13 @@ export default {
 };
 </script>
 
+<style>
+
+.navList{
+	display:flex;
+	flex-direction: row;
+}
+.navList a{
+	margin-right:10px;
+}
+</style>
