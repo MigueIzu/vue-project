@@ -1,24 +1,17 @@
 # vue-project
 
-## Project setup
+## Levantar Base de Datos
 ```
-npm install
+node ./backend/server.js
 ```
 
-### Compiles and hot-reloads for development
+### Levantar Backend
+```
+python app.py
+```
+
+### Levantar Front
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
