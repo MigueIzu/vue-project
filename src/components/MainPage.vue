@@ -2,9 +2,16 @@
   <div>
     <header>
       <div class="header-container" v-if="usuario">
+	 
         <h1>Bienvenido, {{ usuario.nombre }} {{ usuario.apellido }}</h1>
         <img src="@/assets/images/icono-usuario.png" alt="Ícono de Usuario" />
+
       </div>
+	   <div class="navList">
+		<a href="http://localhost:8081/main">Listar Empleados</a>
+		<a href="http://localhost:8081/register">Crear Empleado</a>
+	  	<a href="https://expensesmanagercacpython24155g8front.netlify.app">Front</a>
+	  </div>
     </header>
 
     <main>
@@ -48,6 +55,7 @@
           <a href="#"><img src="@/assets/images/facebook.png" alt="Facebook" /></a>
           <a href="#"><img src="@/assets/images/instagram.png" alt="Instagram" /></a>
           <a href="#"><img src="@/assets/images/x.png" alt="X" /></a>
+		  <a href="https://github.com/Ssergiomc/ExpensesManager_CaCPython_24155G8_Front">Link Expenses Manager</a>
         </div>
       </div>
     </footer>
@@ -148,6 +156,9 @@ export default {
         await axios.delete(`http://localhost:3000/api/empleados/${this.empleadoAEliminar}`);
         this.cargarEmpleados();
         this.mostrarConfirmacion = false;
+		    this.$router.push('/'); // Redirigir al home
+    localStorage.removeItem('empleado'); // Eliminar el usuario del localStorage
+
       } catch (error) {
         console.error('Error al eliminar el empleado:', error);
       }
@@ -171,6 +182,13 @@ export default {
 </script>
 
 <style scoped>
+.navList{
+	display:flex;
+	flex-direction: row;
+}
+.navList a{
+	margin-right:10px;
+}
 /* Modal Overlay */
 .modal-overlay {
   position: fixed;
