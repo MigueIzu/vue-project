@@ -7,7 +7,7 @@ node ./backend/server.js
 
 ### Levantar Backend
 ```
-python app.py
+node ./backend/server.js
 ```
 
 ### Levantar Front
